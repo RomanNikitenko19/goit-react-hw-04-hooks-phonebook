@@ -5,12 +5,10 @@ const Contacts = ({ filterContacts, handleChange, filter, deleteContacts, contac
   return (
     <>
       <Title title={"Contacts"} />
-      {contacts.length > 1 && (
         <label>
           Find contact by name
           <input onChange={handleChange} value={filter} type="text" name="filter" />
         </label>
-      )}
       <ContactsList filterContacts={filterContacts} deleteContacts={deleteContacts} />
     </>
   );
